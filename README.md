@@ -62,6 +62,8 @@ DependencyTracker.configure do |config|
   config.api_key['X-Api-Key'] = 'YOUR API KEY'
   # Uncomment the following line to set a prefix for the API key, e.g. 'Bearer' (defaults to nil)
   #config.api_key_prefix['X-Api-Key'] = 'Bearer'
+  # Configure Endpoint
+  config.endpoint = "https://dependencytracker.local/api/"
 end
 
 api_instance = DependencyTracker::AnalysisApi.new
